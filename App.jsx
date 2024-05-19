@@ -8,10 +8,6 @@ import doingIcon from './assets/glowing-star.png'
 import doneIcon from './assets/check-mark-button.png'
 
 const oldtasks = localStorage.getItem("tasks")
-console.log(oldtasks)
-
-
-
 
 const App = () => {
   const [tasks, settasks] = useState(JSON.parse(oldtasks) || [])
